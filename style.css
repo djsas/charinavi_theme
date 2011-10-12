@@ -73,41 +73,48 @@ textarea{
 	font-size: 0.9em;
 }
 
-.outline {
-	background: #ffffff;
-	width: 96%;
-	margin:auto;
-	border-right: solid 1px #7a7acc;
-	border-left: solid 1px #7a7acc;
+/** Menubar StyleSheet **/
+#menubar{
+	background-color:#808080;
+	color:white;
+	height:30px;
+	width:100%;
 }
-
-.headerlogo {
-	background: url(images/base.gif) left no-repeat #000080;
-	width: 200px;
-	height: 100px;
+#menubar_logo{
+	border-right: 1px solid white;
+	float: left;
+	padding-top:2.5px;
+	padding-bottom: 2.5px;
+	width:200px;
+}
+#menubar_logo img{
+	margin-left: 30px;
+}
+#menubar_tabs ul{
 	margin: 0;
 	padding: 0;
+	list-style: none;
+}
+#menubar_tabs li{
+	border-right: 1px solid white;
+	float: left;
+	margin-right: 1px;
+}
+#menubar_tabs a, #menubar_tabs a:link, #menubar_tabs a:visited{
+	text-decoration: none;
+	color: #ffffff;
+	padding: 2px 10px;
+	display: block;
+}
+#menubar_tabs a:hover{
+	color: #3333cc;
+	background-color: #FFCC00;
 }
 
-.headerbanner {
-	background: url(images/cube.gif) right no-repeat #000080;
-	width: 100%;
-	text-align: center;
-	vertical-align: middle;
-}
-
-.headerbar {
-	background: url(images/nav.gif) repeat-x;
-	font-size: 10pt;
-	text-align: right;
-	margin: 0;
-	padding: 3px 5px;
-	border-bottom: solid 1px #dddddd;
-}
-
+/** Left Sidebar StyleSheet **/
 .leftcolumn {
 	background: url(images/lb.gif) left repeat-y;
-	width: 190px;
+	width: 200px;
 	font-size: 0.9em;
 	border-right: solid 1px #dddddd;
 }
@@ -586,40 +593,3 @@ div.xoopsQuote blockquote {
 	border: solid 1px #c0c0c0;
 }
 
-/** Menubar StyleSheet **/
-#menubar{
-	background-color:#808080;
-	color:white;
-	height:30px;
-	width:100%;
-}
-#menubar_logo{
-	border-right: 1px solid white;
-	float: left;
-	padding-top:2.5px;
-	padding-bottom: 2.5px;
-	width:200px;
-}
-#menubar_logo img{
-	margin-left: 30px;
-}
-#menubar_tabs ul{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-#menubar_tabs li{
-	border-right: 1px solid white;
-	float: left;
-	margin-right: 1px;
-}
-#menubar_tabs a, #menubar_tabs a:link, #menubar_tabs a:visited{
-	text-decoration: none;
-	color: #ffffff;
-	padding: 2px 10px;
-	display: block;
-}
-#menubar_tabs a:hover{
-	color: #3333cc;
-	background-color: #FFCC00;
-}

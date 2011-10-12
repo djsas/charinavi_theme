@@ -43,15 +43,6 @@ echo "\n";
 <body>
 <{include file="$xoops_rootpath/themes/$xoops_theme/menubar.html"}>
 
-<div class="outline">
-<table cellspacing="0">
-<tr>
-<td class="headerlogo"><a href="<{$xoops_url}>/"><img src="<{$xoops_imageurl}>images/logo.gif" width="200" height="100" alt="<{$xoops_sitename}>" title="<{$xoops_sitename}>" /></a></td>
-<td class="headerbanner"><{$xoops_banner}></td>
-</tr>
-</table>
-<div class="headerbar">Welcome <{if $xoops_isuser}><{$xoops_uname}><{else}>Guest<{/if}>&nbsp;</div>
-
 <table cellspacing="0">
 <tr>
 <{if $xoops_showlblock == 1}>
@@ -117,6 +108,6 @@ echo "\n";
 <{if $xoops_footer != 'Powered by XOOPS Cube 2.1&copy; 2001-2006 <a href="http://xoopscube.sourceforge.net/" target="_blank">XOOPS Cube Project</a>'}><{$xoops_footer}><{/if}>
 </div>
 
-</div>
+
 </body>
 </html>
