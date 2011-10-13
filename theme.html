@@ -49,7 +49,9 @@ echo "\n";
 <td id="leftcolumn" class="leftcolumn">
 <!-- Start left blocks loop -->
 <{foreach item=block from=$xoops_lblocks}>
+<{if $block.title|regex_replace:"/.*none/":"none" ne "none"}>
 <div class="leftblockTitle"><{$block.title}></div>
+<{/if}>
 <div class="leftblockContent"><{$block.content}></div>
 <{/foreach}>
 <!-- End left blocks loop -->
