@@ -111,6 +111,10 @@ textarea{
 	background-color: #FFCC00;
 }
 
+/** Avatar Block **/
+#amount{ width:70px; }
+#errormsg{ color:red; }
+
 /** Left Sidebar StyleSheet **/
 .leftcolumn {
 	background: url(images/lb.gif) left repeat-y;
