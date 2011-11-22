@@ -1,5 +1,4 @@
 body {
-	background: #efefef url(images/bg.gif);
 	color: #444444;
 	font-size: 93%;
 	margin: 0;
@@ -78,7 +77,11 @@ textarea{
 	background-color:#808080;
 	color:white;
 	height:30px;
+	left: 0;
+	position: fixed;
+	top: 0;
 	width:100%;
+	z-index: 100;
 }
 #menubar_logo{
 	border-right: 1px solid white;
@@ -109,6 +112,15 @@ textarea{
 #menubar_tabs a:hover{
 	color: #3333cc;
 	background-color: #FFCC00;
+}
+
+/** Container StyleSheet **/
+#container{
+	background: #efefef url(images/bg.gif);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	width:940px;
 }
 
 /** Avatar Block **/
