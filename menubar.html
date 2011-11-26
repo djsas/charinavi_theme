@@ -15,7 +15,25 @@
 <li><a href="<{$xoops_url}>/modules/charinavi/category.php?v=town">まちづくり</a></li>
 <li><a href="<{$xoops_url}>/modules/charinavi/category.php?v=welfare">健康・福祉</a></li>
 <li><a href="<{$xoops_url}>/modules/charinavi/category.php?v=life">ライフ</a></li>
+<li><a tabindex="0" href="#news-items" 
+  class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="hierarchy">
+  <span class="ui-icon ui-icon-triangle-1-s"></span>新規登録</a></li>
+</ul>
+</div>  <!-- end id=menubar_tabs //-->
+
+<div id="news-items" class="hidden">
+<ul>
+	<li><a href="#">一般ユーザとして登録</a></li>
+	<li><a href="#">ボランティア団体として登録</a></li>
 </ul>
 </div>
+<script type="text/javascript">
+$(function(){
+	$('#hierarchy').menu({
+		content: $('#news-items').html(),
+		crumbDefaultText: ' '
+	});
+});
+</script>
 
 </div>

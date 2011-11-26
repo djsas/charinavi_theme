@@ -1,4 +1,11 @@
 body {
+	/*
+	background-image: url(images/bg-back.jpg);
+	background-repeat: repeat-x;
+	background-position: 150% top, 40% top, 20% top;
+	background-attachment: scroll;
+	background-color: #7ba4e2;
+	*/
 	color: #444444;
 	font-size: 93%;
 	margin: 0;
@@ -74,8 +81,9 @@ textarea{
 
 /** Menubar StyleSheet **/
 #menubar{
-	background-color:#808080;
-	color:white;
+ 	background-color: #f4f4f4;
+ 	/* background-color: #5f5f5f; */
+	color: #343333;
 	height:30px;
 	left: 0;
 	position: fixed;
@@ -105,7 +113,7 @@ textarea{
 }
 #menubar_tabs a, #menubar_tabs a:link, #menubar_tabs a:visited{
 	text-decoration: none;
-	color: #ffffff;
+	color: #343333;
 	padding: 2px 10px;
 	display: block;
 }
@@ -609,3 +617,64 @@ div.xoopsQuote blockquote {
 	border: solid 1px #c0c0c0;
 }
 
+/** drill down menu with jQuery **/
+.hidden{
+	position: absolute;
+	top: 0;
+	left: -9999px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+.fg-button{
+	clear: left;
+	margin: 0 4px 40px 20px;
+	padding: .4em 1em;
+	text-decoration: none !important;
+	cursor: pointer;
+	position: relative;
+	text-align: center;
+	zoom: 1;
+}
+.fg-button .ui-icon{
+	position: absolute;
+	top: 50%;
+	margin-top: -8px;
+	left: 50%;
+	margin-left: -8px;
+}
+a.fg-button{
+	float: left;
+}
+button.fg-button{
+	width: auto;
+	overflow: visible;
+}
+/* removes extra button width in IE */
+
+.fg-button-icon-left{
+	padding-left: 2.1em;
+}
+.fg-button-icon-right{
+	padding-right: 2.1em;
+}
+.fg-button-icon-left .ui-icon{
+	right: auto;
+	left: .2em;
+	margin-left: 0;
+}
+.fg-button-icon-right .ui-icon{
+	left: auto;
+	right: .2em;
+	margin-left: 0;
+}
+.fg-button-icon-solo{
+	display: block;
+	width: 8px;
+	text-indent: -9999px;
+}
+/* solo icon buttons must have block properties for the text-indent to work */
+
+.fg-button.ui-state-loading .ui-icon{
+	background: url(lib/theme/images/spinner_bar.gif) no-repeat 0 0;
+}
