@@ -1,12 +1,12 @@
 <{php}>
 $ua = $_SERVER['HTTP_USER_AGENT'];
-if ((ereg("Windows",$ua) > 0) && (ereg("MSIE",$ua) > 0)) {
-if (ereg("MSIE 6.",$ua) > 0) {
-echo '';
-}
+if ((preg_match("/Windows/",$ua) > 0) && (preg_match("/MSIE/",$ua) > 0)) {
+	if (preg_match("/MSIE\s6\./",$ua) > 0) {
+		echo '';
+	}
 } else {
-echo '<?xml version="1.0" encoding="'._CHARSET.'"?>';
-echo "\n";
+	echo '<?xml version="1.0" encoding="'._CHARSET.'"?>';
+	echo "\n";
 }
 <{/php}>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -44,6 +44,7 @@ echo "\n";
 </head>
 
 <body>
+<{$xoops_admin_task_bar}>
 
 <{include file="$xoops_rootpath/themes/$xoops_theme/menubar.html"}>
 
@@ -110,8 +111,7 @@ echo "\n";
 </table>
 
 <div class="footerbar">
-<a href="http://xoopscube.sourceforge.net/"><img src="<{$xoops_imageurl}>images/poweredby.gif" width="287" height="10" alt="XOOPS Cube PROJECT" title="XOOPS Cube PROJECT" /></a><br />
-<{if $xoops_footer != 'Powered by XOOPS Cube 2.1&copy; 2001-2006 <a href="http://xoopscube.sourceforge.net/" target="_blank">XOOPS Cube Project</a>'}><{$xoops_footer}><{/if}>
+<{include file="$xoops_rootpath/themes/$xoops_theme/footer.html"}>
 </div>
 
 
